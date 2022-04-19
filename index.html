@@ -3,10 +3,23 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>San Joaquin Valley Town Hall</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous">
+	</script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
 </head>
 
 <body>
@@ -15,6 +28,9 @@
 		<h2>San Joaquin Valley Town Hall</h2>
 		<h3>Celebrating our <em class="shadow">75<sup>th</sup></em> Year</h3>
 	</header>
+	<nav id="mobile_menu">
+
+	</nav>
 	<ul id="nav_menu">
 		<li>
 			<a href="index.html" class="current">Home</a>
@@ -64,24 +80,26 @@
 			</ul>
 		</section>
 		<aside>
-			<h2>Guest speakers</h2>
 
-			<h2>October<br>
-				<a href="speakers/toobin.html">Jeffrey Toobin</a></h2>
-			<img src="images/toobin75.jpg" alt="Picture of Toobin">
-			<h2>November<br>
-				<a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h2>
-			<img src="images/sorkin75.jpg" alt="Picture of Sorkin">
-			<h2>January<br>
-			<a href="speakers/chua.html">Amy Chua</a></h2>
-			<img src="images/chua75.jpg" alt="Picture of Chua">
-			<h2>February<br>
-				<a href="speakers/sampson.html">Scott Sampson</a></h2>
-			<img src="images/sampson75.jpg" alt="Picture of Sampson">
+			<h2>Guest speakers</h2>
+			<div id="col">
+				<h2>October<br>
+					<a href="speakers/toobin.html">Jeffrey Toobin</a></h2>
+				<img src="images/toobin75.jpg" alt="Picture of Toobin">
+				<h2>November<br>
+					<a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h2>
+				<img src="images/sorkin75.jpg" alt="Picture of Sorkin">
+				<h2>January<br>
+				<a href="speakers/chua.html">Amy Chua</a></h2>
+				<img src="images/chua75.jpg" alt="Picture of Chua">
+				<h2>February<br>
+					<a href="speakers/sampson.html">Scott Sampson</a></h2>
+				<img src="images/sampson75.jpg" alt="Picture of Sampson">
+			</div>
 		</aside>
 	</main>
 	<footer>
-		<p>&copy; 2022, Aryan Nesti, 4/7/21</p>
+		<p>&copy; 2022, Aryan Nesti, 4/20/22</p>
 	</footer>
 </body>
 </html>
